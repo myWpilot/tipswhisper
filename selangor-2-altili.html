@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Selangor 2. Altılı Yorumları — TipsWhisper</title>
-<meta name="description" content="Malezya Selangor Turf Club 2. Altılı yarış yorumları ve tahminleri. Koşu koşu analiz, scratch listesi.">
+<title>Selangor 2. Altılı — TipsWhisper</title>
+<meta name="description" content="Selangor Turf Club 2. Altılı Ganyan kuponu ve koşu koşu yorumlar — TipsWhisper.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -19,48 +19,58 @@
   body{font-family:var(--sans); background:var(--cream); color:var(--ink); line-height:1.6; -webkit-font-smoothing:antialiased;}
   .wrap{max-width:760px; margin:0 auto; padding:0 20px;}
 
-  /* Üst marka bandı */
   header.top{background:var(--green); color:var(--cream);}
   .top .wrap{display:flex; align-items:center; justify-content:space-between; padding:16px 20px;}
-  .logo{display:flex; align-items:center; gap:11px;}
-  .mono{width:38px; height:38px; border-radius:50%; border:1.5px solid var(--gold); display:flex; align-items:center; justify-content:center; font-family:var(--serif); font-weight:600; font-size:17px; color:var(--gold); letter-spacing:.5px;}
-  .brandname{font-family:var(--serif); font-size:19px; font-weight:600; letter-spacing:.3px;}
-  .handle{font-size:12px; color:#B9C9BF; font-weight:500;}
+  .logo{display:flex; align-items:center; gap:12px;}
+  .mono{width:44px; height:44px; border-radius:50%; border:1.5px solid var(--gold); overflow:hidden; display:flex; align-items:center; justify-content:center; font-family:var(--serif); font-weight:600; font-size:18px; color:var(--gold); flex:none;}
+  .mono img{width:100%; height:100%; object-fit:cover; display:block;}
+  .brandname{font-family:var(--serif); font-size:20px; font-weight:600; letter-spacing:.3px;}
+  .handle{font-size:12.5px;}
+  .handle a{color:#B9C9BF; text-decoration:none;}
+  .handle a:hover{color:var(--cream);}
+  .xbtn{display:inline-flex; align-items:center; gap:7px; background:var(--cream); color:var(--green); font-size:13px; font-weight:700; padding:8px 14px; border-radius:22px; text-decoration:none;}
+  .xbtn:hover{background:#fff;}
+  .xbtn svg{width:14px; height:14px;}
 
-  /* Başlık bloğu */
-  .hero{padding:40px 0 20px; border-bottom:1px solid var(--line);}
+  .hero{padding:38px 0 20px; border-bottom:1px solid var(--line);}
   .kicker{font-size:12px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--gold); margin-bottom:12px;}
-  h1{font-family:var(--serif); font-weight:600; font-size:34px; line-height:1.12; letter-spacing:-.01em; margin-bottom:14px;}
+  h1{font-family:var(--serif); font-weight:600; font-size:33px; line-height:1.14; letter-spacing:-.01em; margin-bottom:14px;}
   .meta{font-size:13px; color:var(--muted); font-weight:500;}
   .track{margin-top:18px; padding:15px 18px; background:var(--paper); border-left:3px solid var(--green2); border-radius:4px; font-size:14.5px; font-style:italic; color:#4A473D;}
 
-  /* Uyarı */
-  .warn{margin:22px 0 8px; padding:15px 18px; background:#FBF3E0; border:1px solid #E7D3A6; border-radius:8px; font-size:12.5px; color:#6A5628; line-height:1.55;}
+  .warn{margin:22px 0 8px; padding:14px 18px; background:#FBF3E0; border:1px solid #E7D3A6; border-radius:8px; font-size:12.5px; color:#6A5628; line-height:1.55;}
   .warn b{color:#4E3F17;}
 
-  /* Koşu bölümleri */
-  .race{padding:30px 0; border-bottom:1px solid var(--line);}
-  .rhead{display:flex; align-items:baseline; gap:10px; flex-wrap:wrap; margin-bottom:6px;}
-  .rno{font-family:var(--serif); font-size:13px; font-weight:700; color:#fff; background:var(--green); padding:3px 10px; border-radius:20px; letter-spacing:.02em;}
-  .rname{font-family:var(--serif); font-size:22px; font-weight:600; letter-spacing:-.01em;}
-  .rclass{font-size:12.5px; color:var(--muted); font-weight:600;}
-  .picks{display:flex; flex-wrap:wrap; gap:6px; margin:12px 0 14px;}
-  .chip{font-size:12px; font-weight:600; padding:4px 11px; border-radius:20px; border:1px solid var(--line); background:var(--paper); color:#4A473D;}
-  .chip.fav{background:#E7F0EA; border-color:#BcD8C7; color:var(--green);}
-  .chip.scr{background:#FBEAE7; border-color:#EAC7C1; color:var(--down);}
+  /* Kupon */
+  .kupon{margin:30px 0; background:var(--paper); border:1px solid var(--line); border-radius:12px; overflow:hidden;}
+  .kupon-head{background:var(--green); color:var(--cream); padding:14px 20px; display:flex; align-items:baseline; justify-content:space-between; flex-wrap:wrap; gap:6px;}
+  .kupon-head .kt{font-family:var(--serif); font-size:18px; font-weight:600;}
+  .kupon-head .ks{font-size:12.5px; color:#B9C9BF; font-weight:500;}
+  table{width:100%; border-collapse:collapse;}
+  .kupon td{padding:11px 20px; border-bottom:1px solid var(--line); font-size:14px; vertical-align:top;}
+  .kupon tr:last-child td{border-bottom:none;}
+  .kupon .kno{width:56px; font-family:var(--serif); font-weight:700; color:var(--green); font-size:15px;}
+  .kupon .kats{color:#33322B; font-weight:500;}
+  .banko{color:var(--gold); font-weight:700;}
+  .kupon-foot{padding:14px 20px; background:#EFEADC; display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px; font-size:13px;}
+  .kupon-foot .komb{color:var(--muted); font-weight:600;}
+  .kupon-foot .maliyet{font-family:var(--serif); font-weight:700; font-size:16px; color:var(--green);}
+  .birim{padding:10px 20px; font-size:12.5px; color:var(--muted); border-bottom:1px solid var(--line);}
+
+  h2.sec{font-family:var(--serif); font-size:24px; font-weight:600; margin:36px 0 6px;}
+
+  .race{padding:22px 0; border-bottom:1px solid var(--line);}
+  .rhead{display:flex; align-items:baseline; gap:10px; flex-wrap:wrap; margin-bottom:10px;}
+  .rno{font-family:var(--serif); font-size:13px; font-weight:700; color:#fff; background:var(--green); padding:3px 11px; border-radius:20px;}
+  .rmeta{font-size:12.5px; color:var(--muted); font-weight:600;}
   .rtext{font-size:15px; color:#33322B;}
   .rtext b{color:var(--green); font-weight:700;}
+  .rtext .scr{color:var(--down);}
 
-  /* Scratch özet */
-  .scratch{padding:26px 0 10px;}
-  .scratch h2{font-family:var(--serif); font-size:19px; font-weight:600; margin-bottom:12px;}
-  .scratch ul{list-style:none;}
-  .scratch li{font-size:14px; padding:7px 0; border-bottom:1px dashed var(--line); color:#4A473D;}
-  .scratch li b{color:var(--down);}
-
-  footer{background:var(--green); color:#C6D4CB; margin-top:20px;}
-  footer .wrap{padding:26px 20px; text-align:center; font-size:12.5px; line-height:1.7;}
-  footer .fh{font-family:var(--serif); color:var(--cream); font-size:16px; margin-bottom:6px;}
+  footer{background:var(--green); color:#C6D4CB; margin-top:24px;}
+  footer .wrap{padding:28px 20px; text-align:center; font-size:12.5px; line-height:1.7;}
+  footer .fh{font-family:var(--serif); color:var(--cream); font-size:17px; margin-bottom:6px;}
+  footer a{color:var(--gold); text-decoration:none; font-weight:600;}
 </style>
 </head>
 <body>
@@ -68,12 +78,19 @@
 <header class="top">
   <div class="wrap">
     <div class="logo">
-      <div class="mono">TW</div>
+      <div class="mono">
+        <img src="tipswhisper.png" alt="TipsWhisper"
+             onerror="this.remove();this.parentNode.textContent='TW';">
+      </div>
       <div>
         <div class="brandname">TipsWhisper</div>
-        <div class="handle">@TipsWhisper</div>
+        <div class="handle"><a href="https://x.com/tipswhisper" target="_blank" rel="noopener">@TipsWhisper</a></div>
       </div>
     </div>
+    <a class="xbtn" href="https://x.com/tipswhisper" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 1.15h3.68l-8.04 9.19L24 22.85h-7.41l-5.8-7.58-6.64 7.58H.47l8.6-9.83L0 1.15h7.59l5.24 6.93 6.07-6.93Zm-1.29 19.5h2.04L6.49 3.24H4.3L17.61 20.65Z"/></svg>
+      Takip et
+    </a>
   </div>
 </header>
 
@@ -81,140 +98,104 @@
 
   <section class="hero">
     <div class="kicker">Malezya · Selangor Turf Club · 2. Altılı</div>
-    <h1>Selangor 2. Altılı — Koşu Koşu Yorumlar</h1>
+    <h1>Selangor Meydanı, 26 Temmuz — Genel Değerlendirme</h1>
     <div class="meta">Selangor Turf Club · Koşu 7–12</div>
     <div class="track">
-      Bugün Selangor Turf Club pisti, %50 yağmur ihtimaline rağmen güçlü drenaj sistemi sayesinde
-      Good–Yielding aralığında bekleniyor; pistin yükseltilmiş virajları öne yakın/idareli giden
-      atlara hafif avantaj sağlıyor.
+      Selangor'un Zoysia El-Toro çim pisti drenajı çok güçlü, kolay ağırlaşmaz. Bugün %50 yağmur
+      ihtimaline rağmen zeminin orta-iyi arası kalacağını, aşırı ağır bir pist beklemediğimi
+      düşünüyorum. Virajların kamburlu yapısı öne yakın giden atlara küçük bir avantaj sağlıyor.
     </div>
   </section>
 
   <div class="warn">
-    <b>Önemli hatırlatma:</b> Aşağıdaki yorumlar kesin sonuç garantisi taşımaz — at yarışı doğası
-    gereği belirsizdir, at sahaya çıkar, kazanan orada belli olur. Lütfen bütçenize göre ve sorumlu
-    bir şekilde oynayın; bu yorumlar yalnızca tahmindir, yatırım veya kesin kazanç tavsiyesi değildir.
-    Sorumluluk kabul edilmez.
+    Bunlar benim okumam, tahminim — garanti değil. At sahaya çıkar, orada koşar, kazananı orası
+    belirler. Bütçenizin dışına çıkmayın, sorumlu oynayın.
   </div>
 
-  <!-- Koşu 7 -->
-  <section class="race">
-    <div class="rhead"><span class="rno">Koşu 7</span><span class="rname">Jinling Goldfoil Cup</span></div>
-    <div class="rclass">Class 4 · 1200m</div>
-    <div class="picks">
-      <span class="chip fav">Favori 2 · Iron Samurai</span>
-      <span class="chip">İkinci 8 · Rhythm of Zen</span>
-      <span class="chip">Sürpriz 10 · 5</span>
-      <span class="chip scr">Koşmaz 1 · 3</span>
+  <!-- KUPON -->
+  <div class="kupon">
+    <div class="kupon-head">
+      <span class="kt">Kupon — 2. Altılı Ganyan</span>
+      <span class="ks">son hal</span>
     </div>
+    <div class="birim">Birim fiyat: 1,00 TL · 1 misli</div>
+    <table>
+      <tr><td class="kno">7</td><td class="kats">2-Iron Samurai, 8-Rhythm of Zen, 10-Daylight, 5-The Star</td></tr>
+      <tr><td class="kno">8</td><td class="kats">1-Lucky Eight One, 3-Red Dragonfly, 2-Golden Crest, 6-Friend of Honor</td></tr>
+      <tr><td class="kno">9</td><td class="kats">9-Choice Is Mine, 15-Trees of Valinor, 5-Banker's Honor, 12-Navarre, 6-Banker's Happy</td></tr>
+      <tr><td class="kno">10</td><td class="kats"><span class="banko">1-Antipodean (Banko)</span></td></tr>
+      <tr><td class="kno">11</td><td class="kats">3-Graphjet Express, 1-Banker's Empire, 11-Storm Chaser, 5-Iconspirit</td></tr>
+      <tr><td class="kno">12</td><td class="kats">4-Naughty Kid, 6-Secret Baobei, 9-Famous Name, 1-Star Express</td></tr>
+    </table>
+    <div class="kupon-foot">
+      <span class="komb">Kombinasyon: 4 × 4 × 5 × 1 × 4 × 4 = 1.280</span>
+      <span class="maliyet">Toplam: 1.280,00 TL</span>
+    </div>
+  </div>
+
+  <h2 class="sec">Koşu Koşu Yorumlar</h2>
+
+  <section class="race">
+    <div class="rhead"><span class="rno">Race 7</span><span class="rmeta">1200m · 40.000 MYR ikramiye</span></div>
     <p class="rtext">
-      Bu koşuda <b>1-Aeras</b> ve <b>3-Summit Dominion</b> koşmuyor; birçok tipster kaynağı bu ikisini
-      favori göstermiş olsa da resmi scratch listesiyle elenmişlerdir. Onlar düşünce <b>2-Iron Samurai</b>
-      rating üstünlüğü ve iyi kulvarıyla öne çıkan yeni favori konumunda. <b>8-Rhythm of Zen</b> son
-      çıkışında iyi bir performans sergilemiş, ikinci sırada değerlendirilebilir. <b>10-Daylight</b> ve
-      <b>5-The Star</b> ise sürpriz potansiyeli taşıyan isimler olarak takip edilmeli.
+      Bu yarışta <b class="scr">1-Aeras</b> ile <b class="scr">3-Summit Dominion</b> koşmuyor, ikisi de
+      programdan çıkarıldı. Onlar yokken <b>2-Iron Samurai</b> derece üstünlüğüyle ve iyi bir kulvarla
+      benim gözümde öne çıkan isim. <b>8-Rhythm Of Zen</b> son çıkışında iyi bir izlenim bırakmıştı, bu
+      sınıfta rahat toparlanabilir. <b>10-Daylight</b> ve <b>5-The Star</b> ise ilk bakışta geride kalan
+      ama sürpriz yapma potansiyeli taşıyan iki isim.
     </p>
   </section>
 
-  <!-- Koşu 8 -->
   <section class="race">
-    <div class="rhead"><span class="rno">Koşu 8</span><span class="rname">Class 4</span></div>
-    <div class="rclass">1200m</div>
-    <div class="picks">
-      <span class="chip fav">Favori 1 · Lucky Eight One</span>
-      <span class="chip">Yakın 3 · 2</span>
-      <span class="chip">Sürpriz 6 · Friend of Honor</span>
-    </div>
+    <div class="rhead"><span class="rno">Race 8</span><span class="rmeta">1200m · 40.000 MYR ikramiye</span></div>
     <p class="rtext">
-      Bu koşuda koşmayan at bulunmuyor, alan oldukça sıkışık ve rekabetçi. <b>1-Lucky Eight One</b> en
-      yüksek reytingle favori sayılıyor, ancak geniş kulvarı (11) dikkate alınmalı. <b>3-Red Dragonfly</b>
-      ve <b>2-Golden Crest</b> iyi kulvar avantajıyla yakın takipte, ikisi de kazanma şansı yüksek isimler.
-      <b>6-Friend of Honor</b> ise son form çizgisiyle sürpriz yapabilecek bir alternatif.
+      Koşudan çıkan at bulunmuyor, alan tam anlamıyla sıkışık. <b>1-Lucky Eight One</b> en yüksek dereceyle
+      favori ama geniş kulvarı (11 no) işini biraz zorlaştırabilir. <b>3-Red Dragonfly</b> ile
+      <b>2-Golden Crest</b> iyi kulvarlardan çıkacak, ikisi de kazanma şansı yüksek atlar bence.
+      <b>6-Friend Of Honor</b> son formuyla dördüncü seçeneğim.
     </p>
   </section>
 
-  <!-- Koşu 9 -->
   <section class="race">
-    <div class="rhead"><span class="rno">Koşu 9</span><span class="rname">Selangor Mile</span></div>
-    <div class="rclass">Class OP · 1600m · RM 1.000.000</div>
-    <div class="picks">
-      <span class="chip fav">Favori 9 · Choice Is Mine</span>
-      <span class="chip">İkinci 15 · Trees Of Valinor</span>
-      <span class="chip">Hesaba kat 5 · 12 · 6</span>
-      <span class="chip scr">Koşmaz 18</span>
-    </div>
+    <div class="rhead"><span class="rno">Race 9</span><span class="rmeta">Selangor Milyonu · 1600m · 1.000.000 MYR ikramiye</span></div>
     <p class="rtext">
-      Bu koşuda <b>18-Ai Rocket</b> koşmuyor. <b>9-Choice Is Mine</b>, üç koşuda da yenilmemiş galibiyet
-      serisi ve iyi kulvarıyla hem resmi STC önizlemesinde hem de konsolide tipster verisinde açık favori.
-      <b>15-Trees Of Valinor</b>, F Maynard ekibinden formda dönen bir isim olarak ikinci sırada güçlü bir
-      alternatif. <b>5-Banker's Honor</b> kötü kulvara rağmen sınıf üstünlüğüyle hesaba katılmalı,
-      <b>12-Navarre</b> ve <b>6-Banker's Happy</b> de kazanma ihtimali olan diğer isimler.
+      <b class="scr">18-Ai Rocket</b> programdan çıkarıldı. <b>9-Choice Is Mine</b> yerel pistte üç kere
+      çıktı, üçünde de kazandı; hiç yenilgi görmemiş — bu yarışta en çok güvendiğim isim.
+      <b>15-Trees Of Valinor</b> geçen sezonki 3 yaş Mesafe Şampiyonu, son çıkışında da iyi bir dereceye
+      imza atmıştı. <b>5-Banker's Honor</b> kulvarı kötü çıktı ama sınıfı yüksek. <b>12-Navarre</b> ile
+      <b>6-Banker's Happy</b> de gözden ırak tutmadığım diğer isimler.
     </p>
   </section>
 
-  <!-- Koşu 10 -->
   <section class="race">
-    <div class="rhead"><span class="rno">Koşu 10</span><span class="rname">Class SUP A</span></div>
-    <div class="rclass">1600m</div>
-    <div class="picks">
-      <span class="chip fav">Banko 1 · Antipodean</span>
-      <span class="chip">İkinci 2 · Banker's Two Six</span>
-      <span class="chip">Rakip 7 · 4</span>
-      <span class="chip scr">Koşmaz 10</span>
-    </div>
+    <div class="rhead"><span class="rno">Race 10</span><span class="rmeta">1600m · 50.000 MYR ikramiye</span></div>
     <p class="rtext">
-      Bu koşuda <b>10-Grand Avante</b> koşmuyor. <b>1-Antipodean</b>, 110 reytingle bir sonraki rakibinden
-      17 puan önde ve dört farklı kaynağın da birleştiği tek ortak favori — bu altılıdaki en güçlü banko
-      adayı. <b>2-Banker's Two Six</b> genellikle iyi dereceler alan istikrarlı bir isim olarak ikinci
-      sırada. <b>7-Gulf Eagle</b> ve <b>4-Omniarch</b> ise bu sınıfta hafife alınmaması gereken diğer
-      rakipler.
+      <b class="scr">10-Grand Avante</b> koşmuyor. <b>1-Antipodean</b> burada apayrı bir sınıfta — derecesi
+      rakiplerinin çok üzerinde, daha önce 200.000 Malezya Ringgiti ikramiyeli bir Grup 1 yarışında
+      (Tunku Gold Cup) da koşmuş tecrübeli bir isim; son çıkışlarında eski formuna dönüş sinyalleri
+      veriyor. Bu yarışta gözümü kapatıp yazabileceğim tek isim bu. <b>2-Banker's Two Six</b> genelde ön
+      sıralarda bitiren, güvenilir bir isim.
     </p>
   </section>
 
-  <!-- Koşu 11 -->
   <section class="race">
-    <div class="rhead"><span class="rno">Koşu 11</span><span class="rname">Derby Circle Trophy</span></div>
-    <div class="rclass">Class 3 · 1400m</div>
-    <div class="picks">
-      <span class="chip fav">Favori 3 · Graphjet Express</span>
-      <span class="chip">Alternatif 1 · Banker's Empire</span>
-      <span class="chip">Takip 11 · 5</span>
-      <span class="chip scr">Koşmaz 2</span>
-    </div>
+    <div class="rhead"><span class="rno">Race 11</span><span class="rmeta">1400m · 45.000 MYR ikramiye</span></div>
     <p class="rtext">
-      Bu koşuda <b>2-Flawless</b> koşmuyor. <b>3-Graphjet Express</b>, son çıkışında gösterdiği belirgin
-      gelişimle konsolide verilerde en çok tercih edilen isim olarak öne çıkıyor. <b>1-Banker's Empire</b>,
-      aynı sınıfta son start galibiyetiyle güçlü bir alternatif olarak saygı gösteriliyor. <b>11-Storm
-      Chaser</b> bu sınıfta hafife alınmamalı, <b>5-Iconspirit</b> ise dördüncü sırada değerlendirilebilir.
+      <b class="scr">2-Flawless</b> koşmuyor. <b>3-Graphjet Express</b> son çıkışında geriden gelip hızlı
+      bir final yapmıştı — bu yarışta favorim. <b>1-Banker's Empire</b> aynı sınıfta son startını kazanmış
+      bir isim. <b>11-Storm Chaser</b> bu sınıfta hafife alınmaması gereken, hızlı start alan bir tip.
+      <b>5-Iconspirit</b> dördüncü tercihim.
     </p>
   </section>
 
-  <!-- Koşu 12 -->
   <section class="race">
-    <div class="rhead"><span class="rno">Koşu 12</span><span class="rname">Class 5B</span></div>
-    <div class="rclass">1500m</div>
-    <div class="picks">
-      <span class="chip fav">Favori 4 · Naughty Kid</span>
-      <span class="chip">Yakın 6 · Secret Baobei</span>
-      <span class="chip">Saygı 9 · 1</span>
-    </div>
+    <div class="rhead"><span class="rno">Race 12</span><span class="rmeta">1500m · 30.000 MYR ikramiye</span></div>
     <p class="rtext">
-      Bu koşuda koşmayan at bulunmuyor. <b>4-Naughty Kid</b>, C Leck ekibinden son galibiyetinin ardından
-      formunu sürdürmesi beklenen favori isim. <b>6-Secret Baobei</b>, son 5 çıkışının 4'ünde derece almış
-      istikrarlı bir performansla yakın takipte. <b>9-Famous Name</b> son çıkışında geç hamle yapmış olması
-      nedeniyle saygı görüyor, <b>1-Star Express</b> ise dördüncü sırada bir alternatif.
+      Koşudan çıkan at bulunmuyor. <b>4-Naughty Kid</b>, son galibiyetinin ardından formunu koruyacağını
+      düşündüğüm favorim. <b>6-Secret Baobei</b> son beş çıkışının dördünde dereceye girmiş, istikrarlı bir
+      isim. <b>9-Famous Name</b> son çıkışında geriden gelip iyi bir final yapmıştı. <b>1-Star Express</b>
+      dördüncü tercihim.
     </p>
-  </section>
-
-  <!-- Scratch -->
-  <section class="scratch">
-    <h2>Scratch — Koşmayan Atlar</h2>
-    <ul>
-      <li>Koşu 7: <b>1-Aeras</b>, <b>3-Summit Dominion</b></li>
-      <li>Koşu 9: <b>18-Ai Rocket</b></li>
-      <li>Koşu 10: <b>10-Grand Avante</b></li>
-      <li>Koşu 11: <b>2-Flawless</b></li>
-    </ul>
   </section>
 
 </div>
@@ -223,7 +204,7 @@
   <div class="wrap">
     <div class="fh">TipsWhisper</div>
     Whispers from the rail · uluslararası yarış yorumları<br>
-    Sorumlu oyna. Bu içerik yalnızca tahmindir, kazanç garantisi değildir.
+    <a href="https://x.com/tipswhisper" target="_blank" rel="noopener">@TipsWhisper</a> &nbsp;·&nbsp; Sorumlu oyna. Bu içerik yalnızca tahmindir.
   </div>
 </footer>
 
