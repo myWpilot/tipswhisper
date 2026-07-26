@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TipsWhisper — Uluslararası Yarış Yorumları</title>
+<meta name="description" content="TipsWhisper — uluslararası at yarışı yorumları, altılı kuponları ve koşu koşu analizler.">
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N7YWFSB005"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-N7YWFSB005');
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#F4F0E6; --paper:#FBF8F0; --ink:#1B1A15; --muted:#6E6A5E;
+    --green:#1C4535; --green2:#2E6B50; --gold:#A67C3D; --line:#E2DCCC;
+    --serif:'Fraunces', Georgia, serif;
+    --sans:'Archivo', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{font-family:var(--sans); background:var(--cream); color:var(--ink); line-height:1.6; -webkit-font-smoothing:antialiased;}
+  .wrap{max-width:760px; margin:0 auto; padding:0 20px;}
+
+  header.top{background:var(--green); color:var(--cream);}
+  .top .wrap{display:flex; align-items:center; justify-content:space-between; padding:16px 20px;}
+  .logo{display:flex; align-items:center; gap:12px;}
+  .mono{width:44px; height:44px; border-radius:50%; border:1.5px solid var(--gold); overflow:hidden; display:flex; align-items:center; justify-content:center; font-family:var(--serif); font-weight:600; font-size:18px; color:var(--gold); flex:none;}
+  .mono img{width:100%; height:100%; object-fit:cover; display:block;}
+  .brandname{font-family:var(--serif); font-size:20px; font-weight:600; letter-spacing:.3px;}
+  .handle{font-size:12.5px;}
+  .handle a{color:#B9C9BF; text-decoration:none;}
+  .handle a:hover{color:var(--cream);}
+  .xbtn{display:inline-flex; align-items:center; gap:7px; background:var(--cream); color:var(--green); font-size:13px; font-weight:700; padding:8px 14px; border-radius:22px; text-decoration:none;}
+  .xbtn:hover{background:#fff;}
+  .xbtn svg{width:14px; height:14px;}
+
+  .hero{padding:40px 0 26px; border-bottom:1px solid var(--line); text-align:center;}
+  .hero .tag{font-size:12px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--gold); margin-bottom:12px;}
+  .hero h1{font-family:var(--serif); font-weight:600; font-size:34px; line-height:1.12; margin-bottom:12px;}
+  .hero p{font-size:15px; color:var(--muted); max-width:520px; margin:0 auto;}
+
+  .listwrap{padding:30px 0 10px;}
+  .listhead{font-family:var(--serif); font-size:18px; font-weight:600; color:var(--muted); margin-bottom:16px;}
+
+  a.card{display:block; text-decoration:none; color:inherit; background:var(--paper); border:1px solid var(--line); border-radius:12px; padding:20px 22px; margin-bottom:14px; transition:transform .12s, box-shadow .12s, border-color .12s;}
+  a.card:hover{transform:translateY(-2px); box-shadow:0 6px 20px rgba(28,69,53,.08); border-color:#CFC7B2;}
+  .card .top-row{display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-bottom:8px;}
+  .flag{font-size:11px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:#fff; background:var(--green2); padding:3px 10px; border-radius:20px;}
+  .date{font-size:12.5px; color:var(--muted); font-weight:600;}
+  .card h2{font-family:var(--serif); font-size:22px; font-weight:600; line-height:1.2; margin-bottom:6px; color:var(--ink);}
+  .card p{font-size:14px; color:#4A473D;}
+  .card .go{display:inline-block; margin-top:12px; font-size:13px; font-weight:700; color:var(--green);}
+  .card .go::after{content:" →";}
+
+  footer{background:var(--green); color:#C6D4CB; margin-top:30px;}
+  footer .wrap{padding:28px 20px; text-align:center; font-size:12.5px; line-height:1.7;}
+  footer .fh{font-family:var(--serif); color:var(--cream); font-size:17px; margin-bottom:6px;}
+  footer a{color:var(--gold); text-decoration:none; font-weight:600;}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <div class="logo">
+      <div class="mono">
+        <img src="tipswhisper.png" alt="TipsWhisper"
+             onerror="this.remove();this.parentNode.textContent='TW';">
+      </div>
+      <div>
+        <div class="brandname">TipsWhisper</div>
+        <div class="handle"><a href="https://x.com/tipswhisper" target="_blank" rel="noopener">@TipsWhisper</a></div>
+      </div>
+    </div>
+    <a class="xbtn" href="https://x.com/tipswhisper" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 1.15h3.68l-8.04 9.19L24 22.85h-7.41l-5.8-7.58-6.64 7.58H.47l8.6-9.83L0 1.15h7.59l5.24 6.93 6.07-6.93Zm-1.29 19.5h2.04L6.49 3.24H4.3L17.61 20.65Z"/></svg>
+      Takip et
+    </a>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <section class="hero">
+    <div class="tag">Whispers from the rail</div>
+    <h1>Uluslararası Yarış Yorumları</h1>
+    <p>Dünya pistlerinden altılı kuponları ve koşu koşu okumalar. Kapılar açılmadan önce.</p>
+  </section>
+
+  <section class="listwrap">
+    <div class="listhead">Son yorumlar</div>
+
+    <!-- YENİ YAZILAR BURAYA, EN ÜSTE EKLENİR -->
+
+    <a class="card" href="selangor-2-altili.html">
+      <div class="top-row">
+        <span class="flag">Malezya</span>
+        <span class="date">26 Temmuz 2026</span>
+      </div>
+      <h2>Selangor 2. Altılı — Koşu Koşu Yorumlar</h2>
+      <p>Selangor Turf Club, Koşu 7–12. Kupon, eküri notları ve bir banko. Zoysia El-Toro pisti orta-iyi bekleniyor.</p>
+      <span class="go">Yorumu oku</span>
+    </a>
+
+    <!-- Örnek: yeni yarış eklemek için yukarıdaki kartı kopyala, en üste yapıştır, bilgileri değiştir -->
+
+  </section>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="fh">TipsWhisper</div>
+    Whispers from the rail · uluslararası yarış yorumları<br>
+    <a href="https://x.com/tipswhisper" target="_blank" rel="noopener">@TipsWhisper</a> &nbsp;·&nbsp; Sorumlu oyna. Bu içerik yalnızca tahmindir.
+  </div>
+</footer>
+
+</body>
+</html>
