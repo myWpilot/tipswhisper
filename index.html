@@ -6,7 +6,6 @@
 <title>TipsWhisper — Uluslararası Yarış Yorumları</title>
 <meta name="description" content="TipsWhisper — uluslararası at yarışı yorumları, altılı kuponları ve koşu koşu analizler.">
 
-  
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-N7YWFSB005"></script>
 <script>
@@ -53,7 +52,7 @@
   .listwrap{padding:30px 0 10px;}
   .listhead{font-family:var(--serif); font-size:18px; font-weight:600; color:var(--muted); margin-bottom:16px;}
 
-  a.card{display:block; text-decoration:none; color:inherit; background:var(--paper); border:1px solid var(--line); border-radius:12px; padding:20px 22px; margin-bottom:14px; transition:transform .12s, box-shadow .12s, border-color .12s;}
+  a.card{position:relative; display:block; text-decoration:none; color:inherit; background:var(--paper); border:1px solid var(--line); border-radius:12px; padding:20px 22px; margin-bottom:14px; transition:transform .12s, box-shadow .12s, border-color .12s;}
   a.card:hover{transform:translateY(-2px); box-shadow:0 6px 20px rgba(28,69,53,.08); border-color:#CFC7B2;}
   .card .top-row{display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-bottom:8px;}
   .flag{font-size:11px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:#fff; background:var(--green2); padding:3px 10px; border-radius:20px;}
@@ -62,7 +61,7 @@
   .card p{font-size:14px; color:#4A473D;}
   .card .go{display:inline-block; margin-top:12px; font-size:13px; font-weight:700; color:var(--green);}
   .card .go::after{content:" →";}
-  .win-badge{display:inline-block; margin-top:8px; padding:4px 11px; background:#A67C3D; color:#FBF8F0; font-size:11.5px; font-weight:700; border-radius:12px; letter-spacing:.02em;}
+  .win-corner{position:absolute; top:-12px; right:20px; background:#D4A017; color:#1C4535; font-family:var(--serif); font-weight:700; font-size:13.5px; padding:8px 16px; border-radius:7px; box-shadow:0 4px 10px rgba(0,0,0,.2); transform:rotate(4deg); border:2px solid #1C4535; white-space:nowrap; z-index:2;}
 
   footer{background:var(--green); color:#C6D4CB; margin-top:30px;}
   footer .wrap{padding:28px 20px; text-align:center; font-size:12.5px; line-height:1.7;}
@@ -108,15 +107,15 @@
     <div class="listhead">Son yorumlar</div>
 
     <!-- YENİ YAZILAR BURAYA, EN ÜSTE EKLENİR -->   
-    
+
     <a class="card" href="les-sables-dolonne-06082026_1.html">
+      <div class="win-corner">🏆 12.471,80 TL</div>
       <div class="top-row">
         <span class="flag">Fransa</span>
         <span class="date">6 Ağustos 2026</span>
       </div>
       <h2>Les Sables d'Olonne Altılı — Koşu Koşu Yorumlar</h2>
       <p>Race 2–7. Just Inspiration banko, zemin iyi/hızlı. 4.200 TL kupon.</p>
-      <span class="win-badge">🏆 İkramiye kazanıldı: 12.471,80 TL</span>
       <span class="go">Yorumu oku</span>
     </a>
  
